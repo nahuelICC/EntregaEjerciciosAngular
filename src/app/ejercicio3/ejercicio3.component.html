@@ -1,0 +1,7 @@
+<h3>Ejercicio 3</h3>
+<label for="nombreTarea">Nombre de la tarea: </label>
+<input type="text" id="nombreTarea">
+<button (click)="agregaTarea()">guardar</button>
+<ul>
+  <li *ngFor="let tarea of listaTareas">{{ tarea }}</li>
+</ul>

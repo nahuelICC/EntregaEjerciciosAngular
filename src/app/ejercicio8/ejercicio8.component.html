@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="half">
+  <div *ngFor="let producto of listaProductos">
+    <p>{{producto.nombre}}         {{producto.precio}}€</p>
+    <button (click)="anydirProducto(producto)">+</button>
+    <button (click)="quitarProducto(producto)">-</button>
+  </div>
+  </div>
+  <div class="half">
+    <div *ngFor="let producto of listaProductos">
+      <p>{{producto.nombre}}         {{producto.precio}}€</p>
+      <p>{{producto.cantidad * producto.precio}}€</p>
+
+    </div>
+    <p>Total: {{total}}€</p>
+  </div>
+</div>
